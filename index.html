@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Almoxarifado de Portas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="rail" aria-label="Menu principal">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21V4h16v17M4 9h16M4 14h16M4 19h16"/></svg></span>
+      <div><b>Almoxarifado</b><small>Portas industriais</small></div>
+    </div>
+    <nav class="nav" id="nav" aria-label="Seções">
+      <a href="#painel" data-r="painel"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg>Painel</a>
+      <a href="#estoque" data-r="estoque"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4zM3 7v10l9 4 9-4V7M12 11v10"/></svg>Estoque</a>
+      <a href="#entrada" data-r="entrada"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v3h16v-3"/></svg>Entrada</a>
+      <a href="#porta" data-r="porta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V4h16v17M4 8h16M4 12h16M4 16h16"/></svg>Nova porta</a>
+      <a href="#historico" data-r="historico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Histórico</a>
+    </nav>
+    <div class="rail-foot" id="foot"></div>
+  </aside>
+  <main id="view"></main>
+</div>
+<div id="tip" role="tooltip"></div>
+<div id="toast" role="status" hidden></div>
+<div id="modal-root"></div>
+<datalist id="dl-resp"></datalist><datalist id="dl-forn"></datalist><datalist id="dl-cli"></datalist>
+
+<script src="js/app.js"></script>
+</body>
+</html>
